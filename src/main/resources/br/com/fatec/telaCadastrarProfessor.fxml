@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="617.0" style="-fx-background-color: #000000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.TelaCadastrarProfessorController">
+    <stylesheets>
+        <URL value="@/styles/telacadastraraluno.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#fff9f9" layoutX="140.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRAR PROFESSOR" wrappingWidth="359.025390625">
+         <font>
+            <Font name="Dubai Regular" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNome" layoutX="14.0" layoutY="105.0" prefHeight="25.0" prefWidth="294.0" />
+      <TextField fx:id="txtCpf" layoutX="329.0" layoutY="105.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtEmail" layoutX="14.0" layoutY="157.0" prefHeight="25.0" prefWidth="294.0" />
+      <TextField fx:id="txtTelefone" layoutX="329.0" layoutY="157.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtEspecialidade" layoutX="14.0" layoutY="209.0" prefHeight="25.0" prefWidth="223.0" />
+      <CheckBox fx:id="chkProfessorAtivo" layoutX="271.0" layoutY="215.0" mnemonicParsing="false" text="PROFESSOR ATIVO" textFill="#fff4f4">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME" wrappingWidth="36.81298828125">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="329.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" wrappingWidth="36.81298828125">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="486.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA DE NASCIMENTO" wrappingWidth="120.0">
+         <font>
+            <Font name="Dubai Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL" wrappingWidth="36.81298828125">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="328.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFONE" wrappingWidth="75.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="487.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA DA CONTRATAÇÃO" wrappingWidth="128.0">
+         <font>
+            <Font name="Dubai Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESPECIALIDADE" wrappingWidth="158.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAvancar" layoutX="249.0" layoutY="312.0" mnemonicParsing="false" onAction="#btnAvancarAction" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: #cae2f5;" text="AVANÇAR">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVoltar" layoutX="7.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnVoltarAction" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: #ff0000;" text="VOLTAR">
+         <font>
+            <Font name="Dubai Bold" size="11.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dateNascimento" layoutX="486.0" layoutY="105.0" prefHeight="25.0" prefWidth="100.0" />
+      <DatePicker fx:id="dateContratacao" layoutX="486.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>

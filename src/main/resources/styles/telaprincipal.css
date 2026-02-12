@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    #btnProfessores {
+    -fx-font-weight: bold;
+}
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="617.0" style="-fx-background-color: #000000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.TelaPesquisarTurmaController">
+    <stylesheets>
+        <URL value="@/styles/telacadastraraluno.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#fff9f9" layoutX="248.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" TURMA" wrappingWidth="120.0">
+         <font>
+            <Font name="Dubai Regular" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNome" layoutX="14.0" layoutY="105.0" prefHeight="25.0" prefWidth="294.0" />
+      <TextField fx:id="txtSiglaTurma" layoutX="329.0" layoutY="105.0" prefHeight="25.0" prefWidth="142.0" />
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME " wrappingWidth="142.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="329.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGLA" wrappingWidth="36.81298828125">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="486.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURNO" wrappingWidth="120.0">
+         <font>
+            <Font name="Dubai Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NÍVEL" wrappingWidth="44.81298828125">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFESSOR" wrappingWidth="180.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAlterar" layoutX="136.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnAlterarAction" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: #cae2f5;" text="ALTERAR DADOS">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVoltar" layoutX="7.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnVoltarAction" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: #ff0000;" text="VOLTAR">
+         <font>
+            <Font name="Dubai Bold" size="11.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbTurno" layoutX="486.0" layoutY="105.0" prefHeight="25.0" prefWidth="97.0" />
+      <CheckBox fx:id="chkTurmaAtiva" layoutX="182.0" layoutY="161.0" mnemonicParsing="false" text="TURMA ATIVA" textFill="WHITE" />
+      <CheckBox fx:id="chkTeorica" layoutX="288.0" layoutY="161.0" mnemonicParsing="false" text="TURMA TEÓRICA" textFill="WHITE" />
+      <TextField fx:id="txtPesquisar" layoutX="389.0" layoutY="45.0" prefHeight="25.0" prefWidth="112.0" />
+      <Text fill="#fff7f7" layoutX="389.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PESQUISAR TURMA" wrappingWidth="112.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnPesquisar" layoutX="507.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnPesquisarAction" prefHeight="10.0" prefWidth="78.0" style="-fx-background-color: #cae2f5;" text="PESQUISAR">
+         <font>
+            <Font name="Dubai Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExcluir" layoutX="357.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnExcluirAction" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: #cae2f5;" text="EXCLUIR TURMA">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbNivel" layoutX="14.0" layoutY="159.0" prefHeight="25.0" prefWidth="142.0" />
+      <ComboBox fx:id="cmbInstrumento" layoutX="414.0" layoutY="159.0" prefHeight="25.0" prefWidth="170.0" />
+      <ComboBox fx:id="cmbProfessor" layoutX="14.0" layoutY="215.0" prefHeight="25.0" prefWidth="188.0" />
+      <Text fill="#fff7f7" layoutX="415.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSTRUMENTO USADO" wrappingWidth="180.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

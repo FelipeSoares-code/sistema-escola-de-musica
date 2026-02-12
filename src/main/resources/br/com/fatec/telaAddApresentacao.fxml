@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="617.0" style="-fx-background-color: #000000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.TelaAddApresentacaoController">
+    <stylesheets>
+        <URL value="@/styles/telacadastraraluno.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#fff9f9" layoutX="134.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADICIONAR NOVA DATA DE APRESENTAÇÃO" textAlignment="CENTER" wrappingWidth="349.025390625">
+         <font>
+            <Font name="Dubai Regular" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNomeEvento" layoutX="14.0" layoutY="118.0" prefHeight="25.0" prefWidth="196.0" />
+      <Text fill="#fff7f7" layoutX="14.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME DO EVENTO" wrappingWidth="142.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="225.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA" wrappingWidth="36.81298828125">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fff7f7" layoutX="486.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURMA" wrappingWidth="120.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAvancar" layoutX="249.0" layoutY="312.0" mnemonicParsing="false" onAction="#btnAvancarAction" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: #cae2f5;" text="AVANÇAR">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVoltar" layoutX="7.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnVoltarAction" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: #ff0000;" text="VOLTAR">
+         <font>
+            <Font name="Dubai Bold" size="11.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbTurno" layoutX="363.0" layoutY="118.0" prefHeight="25.0" prefWidth="100.0" />
+      <Text fill="#fff7f7" layoutX="363.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURNO" wrappingWidth="75.0">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="dateData" layoutX="225.0" layoutY="118.0" prefHeight="25.0" prefWidth="120.0" />
+      <ComboBox fx:id="cmbTurma" layoutX="483.0" layoutY="118.0" onAction="#cmbTurma" prefHeight="25.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>

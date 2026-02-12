@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    #texto {
+    -fx-fill: white; /* Cor do texto */
+    -fx-stroke: black; /* Cor do contorno */
+    -fx-stroke-width: 1; /* Largura do contorno */
+}
+}
